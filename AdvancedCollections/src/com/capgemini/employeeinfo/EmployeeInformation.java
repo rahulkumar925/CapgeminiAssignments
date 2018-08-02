@@ -1,3 +1,6 @@
+//Create Employee Information class with fields empID, EmployeeName,EmployeeDesignation, EmpSalary,employeecommission with
+//their setter and getter methods.
+
 package com.capgemini.employeeinfo;
 
 public class EmployeeInformation {

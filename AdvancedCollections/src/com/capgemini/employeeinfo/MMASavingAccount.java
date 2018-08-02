@@ -1,3 +1,5 @@
+//Create MMASavingAccount with fields accountid, accountholder_name, account_balance, isSalaryAccount with their setters and getter methods.
+
 package com.capgemini.employeeinfo;
 
 public class MMASavingAccount {
@@ -9,7 +11,7 @@ public class MMASavingAccount {
 	
 	public int getAccountID() {
 		return accountID;
-	}
+	} 
 	public void setAccountID(int accountID) {
 		this.accountID = accountID;
 	}
