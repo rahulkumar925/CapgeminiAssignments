@@ -8,6 +8,33 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%=(Person)request.getAttribute("PersonObject")%>
+<%
+Person person = (Person) request.getAttribute("PersonObject");
+%>
+<div align="center">
+<h3><b>Resume</b></h3>
+</div>
+<p>
+Name: <%=person.getFirstname()%>&nbsp&nbsp<%=person.getLastname() %><br>
+Gender: <%=person.getGender() %> <br>
+Date of Birth: <%=person.getDob() %> <br>
+Highest Qualification: <%=person.getHq() %> <br>
+Skills:<%for(String skills : person.getSkills()){
+	%>
+	<%=skills %>&nbsp&nbsp
+	<% 
+}%>
+<br>
+Hobbies: <%for(String hobbies : person.getHobbies()){
+	%>
+	<%=hobbies %>&nbsp&nbsp
+	<% 
+}%>
+<br>
+Email: <%= person.getEmail() %><br>
+Contact No: <%=person.getPhoneno() %><br>
+Address: <%=person.getAddress() %><br>
+Summary: <%=person.getSummary() %>
+</p>
 </body>
 </html>

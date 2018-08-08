@@ -56,6 +56,127 @@ public class Person {
 
 
 
+	public String getFirstname() {
+		return firstname;
+	}
+
+
+
+
+
+
+
+
+	public String getLastname() {
+		return lastname;
+	}
+
+
+
+
+
+
+
+
+	public String getGender() {
+		return gender;
+	}
+
+
+
+
+
+
+
+
+	public String getHq() {
+		return hq;
+	}
+
+
+
+
+
+
+
+
+	public String getDob() {
+		return dob;
+	}
+
+
+
+
+
+
+
+
+	public String[] getHobbies() {
+		return hobbies;
+	}
+
+
+
+
+
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+
+
+
+
+
+	public String[] getSkills() {
+		return skills;
+	}
+
+
+
+
+
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+
+
+
+
+
+
+	public String getPhoneno() {
+		return phoneno;
+	}
+
+
+
+
+
+
+
+
+	public String getSummary() {
+		return summary;
+	}
+
+
+
+
+
+
+
+
 	@Override
 	public String toString() {
 		return "Person [firstname=" + firstname + ", lastname=" + lastname + ", gender=" + gender + ", hq=" + hq
