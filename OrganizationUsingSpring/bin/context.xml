@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.1.xsd">
+<util:properties id="properties" location="classpath:proxies.properties"></util:properties>
+<bean id="address" class="com.company.Address">
+<constructor-arg value="R16"></constructor-arg>
+<constructor-arg value="2nd Street"></constructor-arg>
+<constructor-arg value="Navi Mumbai"></constructor-arg>
+<constructor-arg value="Maharashtra"></constructor-arg>
+<constructor-arg value="400708"></constructor-arg>
+<constructor-arg value="India"></constructor-arg>
+</bean>
+<bean id="organization" class="com.company.Organization">
+<constructor-arg value="Capgemini"></constructor-arg>
+<constructor-arg ref="address"></constructor-arg>
+<constructor-arg value="100000000"></constructor-arg>
+<constructor-arg value="10/12/2001"></constructor-arg>
+<constructor-arg value="35000"></constructor-arg>
+<constructor-arg>
+<set>
+<value>Paris</value>
+<value>Newyork</value>
+<value>London</value>
+</set>
+</constructor-arg>
+<constructor-arg>
+<list>
+<value>abc</value>
+<value>def</value>
+<value>ghi</value>
+</list>
+</constructor-arg>
+<constructor-arg>
+<map>
+<entry key="ab" value="Rahul"/>
+<entry key="cd" value="Shyam"/>
+<entry key="ef" value="Sohan"/>
+</map>
+</constructor-arg>
+<constructor-arg ref="properties"></constructor-arg>
+</bean>
+</beans>
